@@ -1,0 +1,25 @@
+{
+  "name": "hardegg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "js": "rollup -w --config",
+    "static": "cp -r src/static/* dist/",
+    "clean": "rm -Rf dist && mkdir dist",
+    "serve": "live-server dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "live-server": "^1.2.1",
+    "livereload": "^0.9.1",
+    "rollup": "^2.36.0"
+  },
+  "dependencies": {
+    "oeil": "^1.0.3"
+  }
+}
