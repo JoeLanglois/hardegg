@@ -4,9 +4,9 @@ import node from '@rollup/plugin-node-resolve'
 
 // rollup.config.js
 const config = {
-    input: 'src/index.js',
+    input: ['src/index.js'],
     output: {
-      file: 'dist/bundle.js',
+      dir: 'dist/js',
       format: 'umd',
       name: 'MyModuleName',
     },
